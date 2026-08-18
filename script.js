@@ -5,11 +5,9 @@ let musicPlaying = false;
 
 function toggleMusic() {
 
-    const music =
-        document.getElementById("music");
+    const music = document.getElementById("music");
 
-    const button =
-        document.getElementById("musicButton");
+    const button = document.getElementById("musicButton");
 
 
     if (musicPlaying) {
@@ -30,13 +28,18 @@ function toggleMusic() {
                 musicPlaying = true;
 
             })
-            .catch(function () {
+            .catch(function (error) {
 
-                alert("Please check that song.mp3 is inside the music folder.");
+                console.log("Music error:", error);
+
+                alert(
+                    "Music could not be played. Please check that song.mp3 is in the main folder."
+                );
 
             });
 
     }
+
 }
 
 
@@ -63,6 +66,7 @@ function openLetter() {
         typeLetter();
 
     }, 800);
+
 }
 
 
@@ -87,6 +91,7 @@ function typeLetter() {
                 .style.opacity = "1";
 
             return;
+
         }
 
 
@@ -113,6 +118,7 @@ function typeLetter() {
 
                 characterIndex++;
 
+
                 setTimeout(
                     typeCharacter,
                     40
@@ -121,6 +127,7 @@ function typeLetter() {
             } else {
 
                 paragraphIndex++;
+
 
                 setTimeout(
                     typeNextParagraph,
@@ -138,6 +145,7 @@ function typeLetter() {
 
 
     typeNextParagraph();
+
 }
 
 
@@ -160,6 +168,7 @@ function showMemories() {
         behavior: "smooth"
 
     });
+
 }
 
 
@@ -185,6 +194,7 @@ function showFinal() {
 
 
     startHearts();
+
 }
 
 
@@ -197,6 +207,7 @@ function revealMessage() {
 
 
     startHearts();
+
 }
 
 
@@ -247,4 +258,5 @@ function startHearts() {
 
 
     }, 1000);
+
 }
