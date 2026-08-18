@@ -289,6 +289,8 @@ button:hover {
     object-fit: cover;
 
     border-radius: 5px;
+
+    display: block;
 }
 
 
@@ -519,25 +521,30 @@ button:hover {
         font-size: 32px;
     }
 
+
     .envelope {
 
         font-size: 80px;
     }
+
 
     .paper {
 
         padding: 30px;
     }
 
+
     .paper h2 {
 
         font-size: 26px;
     }
 
+
     .paper p {
 
         font-size: 17px;
     }
+
 
     .memory-container {
 
@@ -546,9 +553,34 @@ button:hover {
         align-items: center;
     }
 
+
+    .memory-card {
+
+        width: 280px;
+    }
+
+
+    .memory-card img {
+
+        height: 280px;
+    }
+
+
     .final-box {
 
         padding: 30px;
+    }
+
+
+    .music-button {
+
+        top: 10px;
+
+        right: 10px;
+
+        padding: 8px 12px;
+
+        font-size: 12px;
     }
 
 }
