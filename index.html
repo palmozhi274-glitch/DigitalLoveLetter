@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>A Special Letter 💌</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<!-- ================= MUSIC ================= -->
+
+<audio id="music" loop>
+    <source src="music/song.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicButton"
+        class="music-button"
+        onclick="toggleMusic()">
+
+    🎵 Play Music
+
+</button>
+
+
+
+<!-- ================= OPENING ================= -->
+
+<section id="opening" class="opening">
+
+    <div id="envelope" class="envelope">
+        💌
+    </div>
+
+    <h1>A Secret Letter</h1>
+
+    <p>
+        I made something special for you...
+    </p>
+
+    <button onclick="openLetter()">
+        Open 💌
+    </button>
+
+</section>
+
+
+
+<!-- ================= LETTER ================= -->
+
+<section id="letter" class="letter hidden">
+
+    <div class="paper">
+
+        <h2>Dear You, ❤️</h2>
+
+        <p>
+            I wanted to make something special for you.
+        </p>
+
+        <p>
+            This little website is a small way of
+            saying how special you are to me.
+        </p>
+
+        <p>
+            Every beautiful memory, every smile,
+            and every special moment is worth keeping.
+        </p>
+
+        <p>
+            I hope this little surprise makes you smile. ❤️
+        </p>
+
+        <p class="signature">
+            With lots of love ❤️
+        </p>
+
+        <button onclick="showMemories()">
+            See Our Memories 📸
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= MEMORIES ================= -->
+
+<section id="memories" class="memories hidden">
+
+    <h2>📸 Our Memories</h2>
+
+    <p class="memory-intro">
+        Every picture has a story...
+    </p>
+
+
+    <div class="memory-container">
+
+
+        <!-- PHOTO 1 -->
+
+        <div class="memory-card">
+
+            <img src="images/photo1.jpg"
+                 alt="Mine Forever">
+
+            <h3>
+                Mine Forever ❤️
+            </h3>
+
+            <p>
+                You will always have a special
+                place in my heart.
+            </p>
+
+        </div>
+
+
+
+        <!-- PHOTO 2 -->
+
+        <div class="memory-card">
+
+            <img src="images/photo2.jpg"
+                 alt="Sorry Thangom">
+
+            <h3>
+                Sorry Thangom 🥺❤️
+            </h3>
+
+            <p>
+                I'm sorry for the moments when
+                I hurt you.
+            </p>
+
+        </div>
+
+
+
+        <!-- PHOTO 3 -->
+
+        <div class="memory-card">
+
+            <img src="images/photo3.jpg"
+                 alt="My Valuable One">
+
+            <h3>
+                My Valuable One ✨
+            </h3>
+
+            <p>
+                You are truly one of the most
+                valuable people in my life.
+            </p>
+
+        </div>
+
+
+
+        <!-- PHOTO 4 -->
+
+        <div class="memory-card">
+
+            <img src="images/photo4.jpg"
+                 alt="Miss You Thangom">
+
+            <h3>
+                Miss You Thangom ❤️
+            </h3>
+
+            <p>
+                No matter how far, you are always
+                in my thoughts.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <button onclick="showFinal()">
+        One More Surprise ✨
+    </button>
+
+</section>
+
+
+
+<!-- ================= FINAL SURPRISE ================= -->
+
+<section id="final" class="final hidden">
+
+    <div class="final-box">
+
+        <div class="big-heart">
+            ❤️
+        </div>
+
+        <h2>
+            One Last Thing...
+        </h2>
+
+        <p class="final-text">
+            You are not just a memory.
+        </p>
+
+        <p class="final-text">
+            You are one of the most valuable
+            parts of my story. ❤️
+        </p>
+
+        <button onclick="revealMessage()">
+            Open My Heart 💌
+        </button>
+
+
+        <div id="secretMessage"
+             class="secret-message hidden">
+
+            <h3>
+                💖 My Little Message
+            </h3>
+
+            <p>
+                No matter where life takes us,
+                I will always be grateful for
+                the beautiful memories we created.
+            </p>
+
+            <p>
+                Miss you thangom ❤️
+            </p>
+
+            <p class="final-signature">
+                Forever in my memories ✨
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
